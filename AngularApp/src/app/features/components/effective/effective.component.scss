@@ -1,0 +1,27 @@
+.effective {
+  margin-top: 100px;
+  max-width: 100%;
+  &__topic {
+    &__title {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 31px;
+      text-align: center;
+    }
+
+    &__text {
+      color: #ffffff;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 52px;
+      text-align: center;
+    }
+  }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: 100%;
+}

@@ -1,0 +1,32 @@
+.vision {
+  width: 100%;
+  &__title {
+    display: flex;
+    align-items: center;
+    height: 75px;
+    background-color: #e31f19;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 62px;
+    padding-left: 197px;
+  }
+
+  &__subtitle {
+    margin-top: 68px;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  &__photo {
+    margin-top: 35px;
+    border-radius: 39.68px
+  }
+}
+
+.wrapper {
+  width: 490px;
+  margin: 0 auto;
+}
