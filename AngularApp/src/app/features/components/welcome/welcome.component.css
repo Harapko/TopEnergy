@@ -30,6 +30,7 @@
   height: 513px;
   background-color: #2c2c2c;
   padding-top: 80px;
+  transition: opacity 0.1s ease-in-out;
 }
 .welcome__topic__element {
   display: flex;

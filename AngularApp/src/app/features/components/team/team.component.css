@@ -1,0 +1,57 @@
+.team {
+  width: 100%;
+}
+.team__title {
+  display: flex;
+  align-items: center;
+  padding-left: 196px;
+  height: 75px;
+  background-color: #e31f19;
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 62px;
+}
+.team__subtitle {
+  padding-top: 32px;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+}
+.team__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  align-content: center;
+  margin-top: 32px;
+  gap: 100px;
+}
+.team__list__member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team__list__member__photo {
+  border-radius: 100000px;
+}
+.team__list__member__name {
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: center;
+}
+.team__list__member__profession {
+  padding-top: 2px;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=team.component.css.map */

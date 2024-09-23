@@ -1,0 +1,87 @@
+<div class="contact-us">
+  <div appFadeOnScrollDirective class="contact-us__title">
+    <p id="contact-usId">Contact Us</p>
+  </div>
+  <div appFadeOnScrollDirective class="wrapper">
+    <div class="contact-us__subtitle">For any inquiries about getting our boilers installed, please call us at:</div>
+    <div class="contact-us__formName">TOP-ENERGY</div>
+    <form [formGroup]="telegramForm" action="" class="contact-us__form" (ngSubmit)="sendMessage()">
+      <div class="contact-us__form__text">Leave Your Contact Details</div>
+
+      <label class="contact-us__form__label">Name</label>
+      <div class="contact-us__form__validation">
+        <input
+          placeholder="Your Name"
+          type="text"
+          class="contact-us__form__input"
+          formControlName="user"
+          required
+        >
+        <div>
+          @if (telegramForm.get('user')?.hasError('required') && telegramForm.get('user')?.touched){
+            <small>
+              Name is a required field
+            </small>
+          }
+          @if (telegramForm.get('user')?.hasError('minlength') && telegramForm.get('user')?.touched){
+            <small>
+              Name must be at least 3 characters long
+            </small>
+          }
+        </div>
+      </div>
+
+
+
+
+
+      <label class="contact-us__form__label">Email</label>
+      <div class="contact-us__form__validation">
+        <input placeholder="Your Email" type="text" class="contact-us__form__input" formControlName="email" required>
+        <div>
+          @if (telegramForm.get('email')?.hasError('required') && telegramForm.get('email')?.touched){
+            <small>
+              Email is a required field
+            </small>
+          }
+          @if (telegramForm.get('email')?.hasError('email') && telegramForm.get('email')?.touched){
+            <small>
+              Field must contain email
+            </small>
+          }
+        </div>
+      </div>
+
+      <label class="contact-us__form__label">Phone</label>
+      <div class="contact-us__form__validation">
+        <input appPhoneFormatDirective placeholder="Your Phone Number" type="text" class="contact-us__form__input" formControlName="phoneNumber"
+               required>
+        <div>
+          @if (telegramForm.get('phoneNumber')?.hasError('required') && telegramForm.get('phoneNumber')?.touched){
+            <small>
+              Phone is a required field
+            </small>
+          }
+          @if (telegramForm.get('phoneNumber')?.hasError('minlength') && telegramForm.get('phoneNumber')?.touched){
+            <small>
+              Phone is invalid
+            </small>
+          }
+        </div>
+      </div>
+
+
+      <label class="contact-us__form__label">Message</label>
+      <div class="contact-us__form__validation">
+        <textarea (input)="onInput($event)" maxlength="500" placeholder="Your Message" type="text"
+                  class="contact-us__form__input" formControlName="message" required></textarea>
+      </div>
+
+      <p style="margin-left: 89%">{{ this.charCount }} / 500</p>
+
+
+      <button type="submit" class="contact-us__form__button">Submit</button>
+
+    </form>
+  </div>
+</div>

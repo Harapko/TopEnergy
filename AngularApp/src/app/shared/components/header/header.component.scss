@@ -1,5 +1,7 @@
 .header {
-  max-width: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
   background-color: black;
   height: 85px;
   color: white;

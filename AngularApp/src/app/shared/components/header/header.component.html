@@ -4,11 +4,11 @@
       <img ngSrc="assets/images/logo.png" alt="" height="45" width="171">
     </div>
     <nav class="header__nav">
-      <p class="header__nav__link">Advantages </p>
-      <p class="header__nav__link">Vision</p>
-      <p class="header__nav__link">Choose Us</p>
-      <p class="header__nav__link">Team</p>
+      <p class="header__nav__link" (click)="scrollTo('advantagesId')">Advantages </p>
+      <p class="header__nav__link" (click)="scrollTo('visionId')">Vision</p>
+      <p class="header__nav__link" (click)="scrollTo('choose-usId')">Choose Us</p>
+      <p class="header__nav__link" (click)="scrollTo('teamId')">Team</p>
     </nav>
-    <button class="header__button">Contact Us</button>
+    <button (click)="scrollTo('contact-usId')" class="header__button">Contact Us</button>
   </div>
 </div>
