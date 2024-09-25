@@ -1,14 +1,31 @@
-<div class="header">
+<div hidden="" id="headerId" class="header">
   <div class="wrapper">
     <div class="header__logo">
-      <img ngSrc="assets/images/logo.png" alt="" height="45" width="171">
+      <img (click)="scrollTo('bannerId')" ngSrc="assets/images/logo.png" alt="" height="45" width="171">
     </div>
     <nav class="header__nav">
-      <p class="header__nav__link" (click)="scrollTo('advantagesId')">Advantages </p>
+      <p class="header__nav__link" (click)="scrollTo('advantagesId')">Advantages</p>
       <p class="header__nav__link" (click)="scrollTo('visionId')">Vision</p>
       <p class="header__nav__link" (click)="scrollTo('choose-usId')">Choose Us</p>
       <p class="header__nav__link" (click)="scrollTo('teamId')">Team</p>
     </nav>
     <button (click)="scrollTo('contact-usId')" class="header__button">Contact Us</button>
+  </div>
+</div>
+
+
+<div class="burger">
+  <img class="burger__open" (click)="openBurger()" ngSrc="assets/icons/burger3.png" height="60" width="60" alt="">
+  <div class="burger__wrapper">
+    <div class="burger__logo">
+      <img (click)="scrollTo('bannerId')" ngSrc="assets/images/logo.png" alt="" height="45" width="171">
+    </div>
+    <nav class="burger__nav">
+      <span class="burger__nav__link" (click)="scrollTo('advantagesId')">Advantages</span>
+      <span class="burger__nav__link" (click)="scrollTo('visionId')">Vision</span>
+      <span class="burger__nav__link" (click)="scrollTo('choose-usId')">Choose Us</span>
+      <span class="burger__nav__link" (click)="scrollTo('teamId')">Team</span>
+      <button class="burger__button" (click)="scrollTo('contact-usId')"> Contact Us</button>
+    </nav>
   </div>
 </div>

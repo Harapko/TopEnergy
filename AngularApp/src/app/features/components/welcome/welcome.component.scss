@@ -33,16 +33,17 @@
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(352px, 1fr));
-    height: 513px;
+    height: auto;
+    padding: 80px 0;
+    gap: 50px;
     background-color: #2c2c2c;
-    padding-top: 80px;
     transition: opacity 0.1s ease-in-out;
     &__element {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 350px;
+      max-width: 350px;
       height: 352px;
       background-color: #161616;
       border-radius: 24px;
@@ -74,6 +75,44 @@
 .wrapper {
   max-width: 100%;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 1090px){
+
+}
+
+@media screen and (max-width: 1090px) {
+  .welcome {
+    &__title {
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      line-height: 14px;
+    }
+
+    &__topic {
+      grid-template-columns: 1fr;
+
+      &__element {
+      }
+
+      &__element__image {
+      }
+
+      &__element__title {
+      }
+
+      &__element__text {
+      }
+    }
+  }
+
+  .wrapper {
+  }
 }
 
 

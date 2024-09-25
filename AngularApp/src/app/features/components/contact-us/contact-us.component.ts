@@ -39,8 +39,8 @@ export class ContactUsComponent {
 
 
   sendMessage() {
-    const botToken = '7660550515:AAHodG_hCuXg34EQQHL_3VxLb7Iah9j3oz8';
-    const chatId = '591939844';
+    const botToken = '';
+    const chatId = '';
     const message = this.telegramForm.value;
 
     const url = `https://api.telegram.org/bot${botToken}/sendMessage`;

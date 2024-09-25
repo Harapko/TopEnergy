@@ -23,4 +23,11 @@
   max-width: 100%;
 }
 
+@media screen and (max-width: 1090px) {
+  .wrapper {
+    gap: 100px;
+    grid-template-columns: 1fr;
+  }
+}
+
 /*# sourceMappingURL=effective.component.css.map */

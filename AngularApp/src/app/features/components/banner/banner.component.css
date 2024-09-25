@@ -1,8 +1,10 @@
-.banner {
+.banner__photo {
+  content: url("/assets/images/banner1.png");
+  display: block;
+  background: center center no-repeat;
   width: 100%;
-}
-.wrapper {
-  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=banner.component.css.map */
