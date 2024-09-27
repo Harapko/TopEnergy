@@ -8,7 +8,7 @@
     <form [formGroup]="telegramForm" action="" class="contact-us__form" (ngSubmit)="sendMessage()">
       <div class="contact-us__form__text">Leave Your Contact Details</div>
 
-      <label class="contact-us__form__label">Name</label>
+      <label class="contact-us__form__label">Name<span style="color: red">*</span></label>
       <div class="contact-us__form__validation">
         <input
           placeholder="Your Name"
@@ -35,7 +35,7 @@
 
 
 
-      <label class="contact-us__form__label">Email</label>
+      <label class="contact-us__form__label">Email<span style="color: red">*</span></label>
       <div class="contact-us__form__validation">
         <input placeholder="Your Email" type="text" class="contact-us__form__input" formControlName="email" required>
         <div>
@@ -52,7 +52,7 @@
         </div>
       </div>
 
-      <label class="contact-us__form__label">Phone</label>
+      <label class="contact-us__form__label">Phone<span style="color: red">*</span></label>
       <div class="contact-us__form__validation">
         <input appPhoneFormatDirective placeholder="Your Phone Number" type="text" class="contact-us__form__input" formControlName="phoneNumber"
                required>
@@ -74,13 +74,13 @@
       <label class="contact-us__form__label">Message</label>
       <div class="contact-us__form__validation">
         <textarea (input)="onInput($event)" maxlength="500" placeholder="Your Message" type="text"
-                  class="contact-us__form__input" formControlName="message" required></textarea>
+                  class="contact-us__form__input" formControlName="message"></textarea>
       </div>
 
       <p class="contact-us__form__count">{{ this.charCount }} / 500</p>
 
 
-      <button  type="submit" class="contact-us__form__button" disabled>Submit</button>
+      <button type="submit" class="contact-us__form__button" [disabled]="telegramForm.invalid">Submit</button>
 
     </form>
   </div>

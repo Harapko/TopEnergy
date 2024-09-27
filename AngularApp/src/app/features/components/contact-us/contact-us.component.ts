@@ -33,14 +33,14 @@ export class ContactUsComponent {
       user: ['', [Validators.required, Validators.minLength(3)]],
       email: ['', [Validators.required, Validators.email]],
       phoneNumber: ['+380 ', [Validators.required, Validators.minLength(10)]],
-      message: ['', Validators.required],
+      message: [''],
     });
   }
 
 
   sendMessage() {
-    const botToken = '';
-    const chatId = '';
+    const botToken = '7701185279:AAG6ulqt5C9_nIb4Pm1E2f6Y9T-IY9QmWp8';
+    const chatId = '591939844';
     const message = this.telegramForm.value;
 
     const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
