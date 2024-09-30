@@ -23,12 +23,17 @@
       padding-right: 179px;
 
     }
-    }
-
     &__photo {
-
+      content: url("/assets/images/chooseUs.png");
+      width: 416px;
+      height: 315px;
+      margin-top: 60px;
+      margin-bottom: 60px;
       border-radius: 24px;
     }
+    }
+
+
   }
 
 .title {

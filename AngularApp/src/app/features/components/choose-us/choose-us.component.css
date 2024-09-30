@@ -22,7 +22,12 @@
   line-height: 62px;
   padding-right: 179px;
 }
-.choose-us__photo {
+.choose-us__content__photo {
+  content: url("/assets/images/chooseUs.png");
+  width: 416px;
+  height: 315px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   border-radius: 24px;
 }
 
